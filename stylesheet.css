@@ -273,7 +273,7 @@ footer ul {
 #search {
     background:#EB5428;
     position:absolute;
-    width:414px;
+    width:100%;
     margin-top:45px;
 }
 
@@ -318,4 +318,24 @@ footer svg {
 #social {
     padding-top:30px;
     padding-bottom:25px;
+}
+
+@media screen and (min-width:768px) {
+    body {
+        max-width:768px;
+    }
+
+    #search {
+        width:768px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    body {
+        max-width:1280px;
+    }
+
+    #search {
+        width:1280px;
+    }
 }
