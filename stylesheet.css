@@ -153,7 +153,7 @@ menu svg {
 }
 
 menu p {
-    font-family: 'Bebas Neue', sans-serif;;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 header p:nth-child(4),header p:nth-child(5) {
@@ -168,6 +168,11 @@ header p:nth-child(5) {
 #details h2 {
     text-align:center;
     padding-bottom:10px;
+}
+
+header h1 {
+    display:block;
+    margin-top:100px;
 }
 
 #details {
@@ -191,7 +196,6 @@ header p:nth-child(5) {
   #ingredients ul {
     display:inline;
     list-style-type:disc;
-    padding-left;
     list-style-position:inside;
   }
 
@@ -240,8 +244,22 @@ header p:nth-child(5) {
 nav {
     position:absolute;
     top:0px;
-    text-align:center;
     width:414px;
+    text-align:center;
+}
+
+nav div {
+    display:inline;
+    padding-left:50px;
+    text-align:center;
+}
+
+nav svg:nth-child(4) {
+    width:200px;
+}
+
+#search h2 {
+    display:none;
 }
 
 nav h2 {
@@ -250,6 +268,7 @@ nav h2 {
 
 nav li {
     display:inline;
+    color:#EB5428;
 }
 
 nav li:nth-child(1) {
@@ -262,8 +281,8 @@ footer ul {
 
 #search input {
     display:inline;
-    width:50%;
     height:30px;
+    width:200px;
 }
 
 #search svg{
@@ -273,8 +292,12 @@ footer ul {
 #search {
     background:#EB5428;
     position:absolute;
-    width:100%;
-    margin-top:45px;
+    margin-top:125px;
+    margin-left:90px;
+    padding-left:3px;
+    padding-bottom:1px;
+    padding-top:2px;
+    z-index:1;
 }
 
 footer h3 {
@@ -320,22 +343,34 @@ footer svg {
     padding-bottom:25px;
 }
 
+nav img {
+    display:none;
+}
+
+nav li {
+    display:block;
+    background:white;
+    z-index:2;
+}
+
+#signup h3 {
+    display:none;
+}
+
+#signup p {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size:20px;
+}
 @media screen and (min-width:768px) {
     body {
         max-width:768px;
     }
 
-    #search {
-        width:768px;
-    }
+    
 }
 
 @media screen and (min-width:1280px) {
     body {
         max-width:1280px;
-    }
-
-    #search {
-        width:1280px;
     }
 }
