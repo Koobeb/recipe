@@ -361,16 +361,113 @@ nav li {
     font-family: 'Bebas Neue', sans-serif;
     font-size:20px;
 }
+
 @media screen and (min-width:768px) {
     body {
         max-width:768px;
     }
 
+    ul{
+        overflow:visible;
+        display:inline;
+    }
+
+    nav li {
+        display:inline;
+        width:768px;
+    }
+
+    nav {
+        display:inline;
+        width:768px;
+        height:350px;
+    }
+
+    ul img {
+        display:inline;
+        width:8%;
+    }
+
+    nav label {
+        display:none;
+    }
+
+    nav svg:last-child{
+        display:block;
+    }
+
+    header h1 {
+        text-align:left;
+    }
+
+    #details dl {
+        display:block;
+    }
+    #details dt{
+    margin-left:250px;
+    width:150px;
+    }
+
+    #ingredients, #directions {
+        width:50%;
+        padding:0;
+        display:flex;
+    }
+
+    #directions {
+        padding-top:0;
+        margin-left:50%;
+    }
+
+    #sides img {
+        width:15%
+    }
     
+    footer img {
+        width:25%;
+        padding-left:280px;
+    }
+
+    #social {
+        margin-left:175px;
+    }
+
 }
+
 
 @media screen and (min-width:1280px) {
     body {
         max-width:1280px;
+    }
+
+    nav {
+        width:1280px;
+    }
+
+    nav img {
+        width:6%;
+    }
+
+    header h1 {
+        text-align:center;
+    }
+
+    #details {
+        background:black;
+        color:#7ABFBF
+    }
+
+    #sides img{
+        width:13%;
+    }
+
+    footer img {
+        width:15%;
+        padding-left:10px;
+    }
+
+    footer small {
+        display:flex;
+        padding-left:250px;
     }
 }
